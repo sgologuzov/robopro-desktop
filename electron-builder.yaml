@@ -3,19 +3,19 @@ directories:
   output: dist
 extraFiles: ['LICENSE', 'LICENSE.ScratchFoundation', 'TRADEMARK', "tools", "external-resources", 'firmwares', "drivers"]
 
-appId: openblock.cc.openblock-desktop
-productName: "OpenBlockDesktop"
+appId: openblock.cc.robopro-desktop
+productName: "RoboProDesktop"
 publish:
   - provider: github
   - provider: spaces
     name: openblock
     path: desktop
     region: sgp1
-artifactName: "OpenBlock-Desktop_v${version}_${os}_${arch}.${ext}"
+artifactName: "RoboPro-Desktop_v${version}_${os}_${arch}.${ext}"
 
 fileAssociations:
   ext: ob
-  name: OpenBlock project file
+  name: RoboPro project file
   role: Editor
   icon: buildResources/OpenBlockFile.ico
 
@@ -35,7 +35,7 @@ mac:
     - dmg
     # - mas
 dmg:
-  title: "OpenBlock-Desktop_${version}"
+  title: "RoboPro-Desktop_${version}"
 # mas:
 #   category: public.app-category.education
 #   entitlements: buildResources/entitlements.mas.plist
@@ -53,7 +53,7 @@ win:
     - nsis
 # appx:
 #   identityName: "OpenblockTeam.OpenblockDesktop
-#   publisherDisplayName: "OpenBlock Team"
+#   publisherDisplayName: "RoboPro Team"
 #   publisher: "CN=2EC43DF1-469A-4119-9AB9-568A0A1FF65F"
 nsis:
   oneClick: false # allow user to choose per-user or per-machine
@@ -66,7 +66,7 @@ linux:
   icon: buildResources/linux
   desktop:
     - Encoding: UTF-8
-    - Name: OpenBlockDesktop
+    - Name: RoboProDesktop
     - Icon: openblock-desktop
     - Type: Application
     - Terminal: false

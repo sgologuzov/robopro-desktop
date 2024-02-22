@@ -5,37 +5,37 @@ import styles from './privacy.css';
 const PrivacyElement = () => (
     <div className={styles.privacyBox}>
         <h1>Privacy Policy</h1>
-        <i>The OpenBlock Privacy Policy was last updated: October 5, 2020</i>
+        <i>The RoboPro Privacy Policy was last updated: October 5, 2020</i>
         <p>
-            The OpenBlock Team (&ldquo;OpenBlock&rdquo;, &ldquo;we&rdquo; or &ldquo;us&rdquo;) understands how
+            The RoboPro Team (&ldquo;RoboPro&rdquo;, &ldquo;we&rdquo; or &ldquo;us&rdquo;) understands how
             important privacy is to our community. We wrote this Privacy Policy to explain what Personal Information
             (&ldquo;Information&rdquo;) we collect through our offline editor (the &ldquo;<a
                 href="https://wiki.openblock.cc/zh/download-software/"
                 target="_blank"
                 rel="noopener noreferrer"
-            >OpenBlock App</a>&rdquo;), how we use, process, and share it, and what we&apos;re doing to keep it safe. It
+            >RoboPro App</a>&rdquo;), how we use, process, and share it, and what we&apos;re doing to keep it safe. It
             also tells you about your rights and choices with respect to your Personal Information, and how you can <a
                 href="https://www.openblock.cc/contact-us/"
                 target="_blank"
                 rel="noopener noreferrer"
             >contact us</a> if you have any questions or concerns.
         </p>
-        <h2>What Information Does OpenBlock Collect About Me?</h2>
+        <h2>What Information Does RoboPro Collect About Me?</h2>
         <p>
             For the purpose of this Privacy Policy, &ldquo;Information&rdquo; means any information relating to an
-            identified or identifiable individual. The OpenBlock App automatically collects and stores locally the
+            identified or identifiable individual. The RoboPro App automatically collects and stores locally the
             following Information through its telemetry system: the title of your project in text form, language
-            setting, time zone and events related to your use of the OpenBlock App (namely when the OpenBlock App was
+            setting, time zone and events related to your use of the RoboPro App (namely when the RoboPro App was
             opened and closed, if a project file has been loaded or saved, or if a new project is created). If you
-            choose to turn on the telemetry sharing feature, the OpenBlock App will transmit this information to OpenBlock.
-            Projects created in the OpenBlock App are not transmitted to or accessible by OpenBlock.
+            choose to turn on the telemetry sharing feature, the RoboPro App will transmit this information to RoboPro.
+            Projects created in the RoboPro App are not transmitted to or accessible by RoboPro.
         </p>
-        <h2>How Does OpenBlock Use My Information?</h2>
+        <h2>How Does RoboPro Use My Information?</h2>
         <p>We use this Information for the following purposes:</p>
         <ul>
             <li>
-                <b>Analytics and Improving the OpenBlock App</b> - We use the Information to analyze use of the OpenBlock
-                App and to enhance your learning experience on the OpenBlock App.
+                <b>Analytics and Improving the RoboPro App</b> - We use the Information to analyze use of the RoboPro
+                App and to enhance your learning experience on the RoboPro App.
             </li>
             <li>
                 <b>Legal</b> - We may use your Information to enforce our <a
@@ -43,7 +43,7 @@ const PrivacyElement = () => (
                     target="_blank"
                     rel="noopener noreferrer"
                 >Terms of Use</a>, to defend our legal rights, and to comply with our legal obligations and internal
-                policies. We may do this by analyzing your use of the OpenBlock App.
+                policies. We may do this by analyzing your use of the RoboPro App.
             </li>
         </ul>
         <h2>What Are The Legal Grounds For Processing Your Information?</h2>
@@ -51,15 +51,15 @@ const PrivacyElement = () => (
             If you are located in the European Economic Area, the United Kingdom or Switzerland, we only process your
             Information based on a valid legal ground. A &ldquo;legal ground&rdquo; is a reason that justifies our use
             of your Information. In this case, we or a third party have a legitimate interest in using your Information
-            (if you choose to allow the OpenBlock App to send the OpenBlock team your Information) to create, analyze and
+            (if you choose to allow the RoboPro App to send the RoboPro team your Information) to create, analyze and
             share your aggregated or de-identified Information for research purposes, to analyze and enhance your
-            learning experience on the OpenBlock App and otherwise ensure and improve the safety, security, and
-            performance of the OpenBlock App. We only rely on our or a third party’s legitimate interests to process your
+            learning experience on the RoboPro App and otherwise ensure and improve the safety, security, and
+            performance of the RoboPro App. We only rely on our or a third party’s legitimate interests to process your
             Information when these interests are not overridden by your rights and interests.
         </p>
-        <h2>How Does OpenBlock Share My Information?</h2>
+        <h2>How Does RoboPro Share My Information?</h2>
         <p>
-            We disclose information that we collect through the OpenBlock App to third parties in the following
+            We disclose information that we collect through the RoboPro App to third parties in the following
             circumstances:
         </p>
         <ul>
@@ -88,15 +88,15 @@ const PrivacyElement = () => (
         </ul>
         <h2>Children and Student Privacy</h2>
         <p>
-            The OpenBlock Team is a nonprofit organization. As such, the Children&apos;s Online Privacy
-            Protection Act (COPPA) does not apply to OpenBlock. Nevertheless, OpenBlock takes children&apos;s privacy
-            seriously. OpenBlock collects only minimal information from its users, and only uses and discloses
+            The RoboPro Team is a nonprofit organization. As such, the Children&apos;s Online Privacy
+            Protection Act (COPPA) does not apply to RoboPro. Nevertheless, RoboPro takes children&apos;s privacy
+            seriously. RoboPro collects only minimal information from its users, and only uses and discloses
             information to provide the services and for limited other purposes, such as research, as described in this
             Privacy Policy.
         </p>
         <p>
-            OpenBlock does not collect information from a student&apos;s education record, as defined by the Family
-            Educational Rights and Privacy Act (FERPA). OpenBlock does not disclose information of students to any third
+            RoboPro does not collect information from a student&apos;s education record, as defined by the Family
+            Educational Rights and Privacy Act (FERPA). RoboPro does not disclose information of students to any third
             parties except as described in this Privacy Policy.
         </p>
         <h2>Your Data Protection Rights (EEA)</h2>
@@ -114,7 +114,7 @@ const PrivacyElement = () => (
             <li>
                 <b>Objection</b> – You may object to (this means &ldquo;ask us to stop&rdquo;) any use of your
                 Information that is not (i) processed to comply with a legal obligation, (ii) necessary to do what is
-                provided in a contract between OpenBlock and you, or (iii) if we have a compelling reason to do so (such
+                provided in a contract between RoboPro and you, or (iii) if we have a compelling reason to do so (such
                 as, to ensure safety and security in our online community). If you do object, we will work with you to
                 find a reasonable solution.
             </li>
@@ -165,10 +165,10 @@ const PrivacyElement = () => (
             services we provide to you if we delete some Information from or about you, mandatory retention periods
             provided by law and the statute of limitations.
         </p>
-        <h2>How Does OpenBlock Protect My Information?</h2>
+        <h2>How Does RoboPro Protect My Information?</h2>
         <p>
-            OpenBlock has in place administrative, physical, and technical procedures that are intended to protect the
-            Information we collect on the OpenBlock App against accidental or unlawful destruction, accidental loss,
+            RoboPro has in place administrative, physical, and technical procedures that are intended to protect the
+            Information we collect on the RoboPro App against accidental or unlawful destruction, accidental loss,
             unauthorized alteration, unauthorized disclosure or access, misuse, and any other unlawful form of
             processing of the Information. However, as effective as these measures are, no security system is
             impenetrable. We cannot completely guarantee the security of our databases, nor can we guarantee that the
@@ -177,7 +177,7 @@ const PrivacyElement = () => (
         <h2>International Data Transfer</h2>
         <p>
             We may transfer your Information to countries other than the country where you are located, including to
-            the China. (where our OpenBlock servers are located) or any other country in which we or our service
+            the China. (where our RoboPro servers are located) or any other country in which we or our service
             providers maintain facilities. If you are located in the European Economic Area, the United Kingdom or
             Switzerland, or other regions with laws governing data collection and use that may differ from U.S. law,
             please note that we may transfer your Information to a country and jurisdiction that does not have the same
@@ -189,12 +189,12 @@ const PrivacyElement = () => (
             We review our Privacy Policy on a periodic basis, and we may modify our policies as appropriate. We will
             notify you of any material changes. We encourage you to review our Privacy Policy on a regular basis. The
             &ldquo;Last Updated&rdquo; date at the top of this page indicates when this Privacy Policy was last
-            revised. Your continued use of the OpenBlock App following these changes means that you accept the revised
+            revised. Your continued use of the RoboPro App following these changes means that you accept the revised
             Privacy Policy.
         </p>
         <h2>Contact Us</h2>
         <p>
-            The OpenBlock Team is the entity responsible for the processing of your Information. If you have any
+            The RoboPro Team is the entity responsible for the processing of your Information. If you have any
             questions about this Privacy Policy, or if you would like to exercise your rights to your Information, you
             may contact us at <a
                 href="mailto:help@openblock.cc"
@@ -203,7 +203,7 @@ const PrivacyElement = () => (
             >help@openblock.cc</a> or via mail at:
         </p>
         <div className="vcard">
-            <div className="org">OpenBlock Team</div>
+            <div className="org">RoboPro Team</div>
             <div className="fn">ATTN: Privacy Policy</div>
             <div className="adr">
                 <div className="street-address">Datang Street</div>
