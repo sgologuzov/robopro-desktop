@@ -18,6 +18,7 @@ module.exports = defaultConfig =>
                 /node_modules[\\/]+scratch-[^\\/]+[\\/]+src/,
                 /node_modules[\\/]+openblock-[^\\/]+[\\/]+src/,
                 /node_modules[\\/]+pify/,
+                /node_modules[\\/]+robopro-[^\\/]+[\\/]+src/,
                 /node_modules[\\/]+@vernier[\\/]+godirect/
             ],
             plugins: [
