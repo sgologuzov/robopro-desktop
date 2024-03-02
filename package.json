@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "bytes": "^3.1.2",
-    "openblock-link": "github:sgologuzov/robopro-link",
+    "openblock-link": "^0.2.0-prerelease.20230530141909",
     "openblock-resource": "github:sgologuzov/robopro-resource",
     "postinstall": "^0.7.4",
     "source-map-support": "^0.5.19"
@@ -93,7 +93,7 @@
     "react-redux": "5.0.7",
     "redux": "3.7.2",
     "rimraf": "^3.0.2",
-    "robopro-gui": "github:sgologuzov/robopro-gui#robopro-desktop-v0.1.1",
+    "robopro-gui": "github:sgologuzov/robopro-gui#robopro-desktop-v0.1.2",
     "sudo-prompt": "^9.2.1",
     "uuid": "^8.3.2",
     "webpack": "^4.43.0"
