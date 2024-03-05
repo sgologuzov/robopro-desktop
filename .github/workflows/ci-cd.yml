@@ -16,7 +16,7 @@ jobs:
     strategy:
       matrix:
         os:
-          - linux-latest
+          - ubuntu-latest
           - macos-latest
           - windows-latest
     runs-on: ${{ matrix.os }}
@@ -81,11 +81,11 @@ jobs:
           cd dist/mas-dev
           ditto -v -c -k --sequesterRsrc --keepParent --zlibCompressionLevel 9 \
             Scratch*.app ../mas-dev-${NPM_APP_VERSION}.zip
-      - name: Upload Linux artifacts
+      - name: Upload Ubuntu artifacts
         uses: actions/upload-artifact@a8a3f3ad30e3422c9c7b888a15615d19a852ae32 # v3
-        if: matrix.os == 'linux-latest'
+        if: matrix.os == 'ubuntu-latest'
         with:
-          name: Linux
+          name: Ubuntu
           path: |
             dist/RoboPro*.deb
       - name: Upload macOS artifacts
