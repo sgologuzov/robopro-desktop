@@ -51,6 +51,11 @@ jobs:
       - name: Npm Install
         run: npm ci
 
+      - name: Install Python 2.7
+          run: |
+            brew install pyenv
+            pyenv install 2.7.18
+
       - name: Build Dist
         env:
           GA_ID: ${{ secrets.GA_ID }}

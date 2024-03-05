@@ -19,7 +19,7 @@ class OpenblockDesktopUpdater {
         this.isCN = app.getLocaleCountryCode() === 'CN';
 
         if (this.isCN) {
-            console.log('INFO: The current system setting region is China, use DigitalOcean as the update server.');
+            log.info('INFO: The current system setting region is China, use DigitalOcean as the update server.');
             autoUpdater.setFeedURL({
                 provider: 'spaces',
                 name: 'openblock',
@@ -101,7 +101,7 @@ class OpenblockDesktopUpdater {
     checkUpdateAtStartup () {
         autoUpdater.on('error', err => {
             this.removeAllAutoUpdaterListeners();
-            console.warn(`Error while checking for application update: ${err}`);
+            log.warn(`Error while checking for application update: ${err}`);
         });
         autoUpdater.once('update-available', applicationUpdateInfo => {
             this.removeAllAutoUpdaterListeners();
@@ -116,7 +116,7 @@ class OpenblockDesktopUpdater {
                     }
                 })
                 .catch(err => {
-                    console.warn(`Error while checking for resource update: ${err}`);
+                    log.warn(`Error while checking for resource update: ${err}`);
                 });
         });
 
@@ -238,7 +238,7 @@ class OpenblockDesktopUpdater {
                 autoUpdater.on('update-downloaded', () => {
                     this.reportUpdateState({phase: UPDATE_MODAL_STATE.applicationDownloadFinish});
                     setTimeout(() => {
-                        console.log(`INFO: App will quit and install after 3 seconds`);
+                        log.log(`INFO: App will quit and install after 3 seconds`);
                         autoUpdater.quitAndInstall();
                     }, 1000 * 3);
                 });

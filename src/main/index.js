@@ -458,13 +458,13 @@ const createMainWindow = () => {
         update.reqeustUpdate()
             .then(() => {
                 setTimeout(() => {
-                    console.log(`INFO: App will restart after 3 seconds`);
+                    log.info(`App will restart after 3 seconds`);
                     app.relaunch();
                     app.exit();
                 }, 1000 * 3);
             })
             .catch(err => {
-                console.error(`ERR!: update failed: ${err}`);
+                log.error(`ERR!: update failed: ${err}`);
             });
     });
 

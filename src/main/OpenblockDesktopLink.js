@@ -3,6 +3,7 @@ import path from 'path';
 import os from 'os';
 import {execFile, spawn} from 'child_process';
 import fs from 'fs-extra';
+import log from 'electron-log';
 import ElectronStore from 'electron-store';
 
 import compareVersions from 'compare-versions';
@@ -84,13 +85,13 @@ class OpenblockDesktopLink {
         // if current version is newer then cache log, delete the data cache dir and write the
         // new version into the cache file.
         if (!this._storage.has('version')) {
-            console.log('First launch or older versions exist, try to clearing cache...');
+            log.info('First launch or older versions exist, try to clearing cache...');
             this.clearCache(false);
             this._storage.set('version', appVersion);
         }
         const oldVersion = this._storage.get('version');
         if (compareVersions.compare(appVersion, oldVersion, '>')) {
-            console.log('New version detected, clearing cache...');
+            log.info('New version detected, clearing cache...');
             this.clearCache(false);
             this._storage.set('version', appVersion);
         }
