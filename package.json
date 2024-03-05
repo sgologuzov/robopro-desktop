@@ -107,5 +107,8 @@
   },
   "resolutions": {
     "upath": "1.2.0"
+  },
+  "optionalDependencies": {
+    "dmg-license": "^1.0.11"
   }
 }
