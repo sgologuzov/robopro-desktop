@@ -48,13 +48,13 @@ jobs:
         with:
           node-version: '16.x'
 
-      - name: Npm Install
-        run: npm ci
-
       - name: Install Python 2.7
         run: |
-          brew install pyenv
-          pyenv install 2.7.18
+            brew install pyenv
+            pyenv install 2.7.18
+
+      - name: Npm Install
+        run: npm ci
 
       - name: Build Dist
         env:
