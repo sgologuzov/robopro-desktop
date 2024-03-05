@@ -12,8 +12,8 @@ const MONACO_DIR = path.resolve(__dirname, './node_modules/monaco-editor');
 
 // PostCss
 const autoprefixer = require('autoprefixer');
-const postcssVars = require('postcss-simple-vars');
 const postcssImport = require('postcss-import');
+const postcssVars = require('postcss-simple-vars');
 
 const isProduction = (process.env.NODE_ENV === 'production');
 
@@ -27,7 +27,9 @@ const makeConfig = function (defaultConfig, options) {
         plugins: [
             '@babel/plugin-syntax-dynamic-import',
             '@babel/plugin-transform-async-to-generator',
-            '@babel/plugin-proposal-object-rest-spread'
+            '@babel/plugin-proposal-object-rest-spread',
+            '@babel/plugin-transform-nullish-coalescing-operator',
+            '@babel/plugin-transform-optional-chaining'
         ],
         presets: [
             ['@babel/preset-env', {targets: {electron: electronVersion}}]
