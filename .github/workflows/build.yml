@@ -48,10 +48,10 @@ jobs:
         with:
           node-version: '16.x'
 
-      - name: Install Python 2.7
+      - name: Install Python 3.11
         run: |
             brew install pyenv
-            pyenv install 2.7.18
+            pyenv install 3.11
 
       - name: Npm Install
         run: npm ci
