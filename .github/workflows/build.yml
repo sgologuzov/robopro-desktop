@@ -48,10 +48,10 @@ jobs:
         with:
           node-version: '16.x'
 
-      - name: Install Python 3.11
-        run: |
-            brew install pyenv
-            pyenv install 3.11
+      - name: Install Python 3.10
+      - uses: actions/setup-python@v5
+        with:
+            python-version: '3.10'
 
       - name: Npm Install
         run: npm ci
