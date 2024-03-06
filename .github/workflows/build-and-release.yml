@@ -57,7 +57,7 @@ jobs:
 
   build-windows:
     needs: create-release
-    runs-on: windows-latest
+    runs-on: windows-2019
     steps:
       - uses: actions/checkout@v2
 
@@ -80,39 +80,40 @@ jobs:
           NODE_OPTIONS: --max_old_space_size=4096
         run: npm run publish
 
-  build-mac:
-    needs: create-release
-    runs-on: macos-latest
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Use Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16.x'
-      - name: Install Python 2.7
-        run: |
-            brew install pyenv
-            pyenv install 2.7.18
-
-      - name: Install Python 3.10
-        uses: actions/setup-python@v5
-        with:
-            python-version: '3.10'
-
-      - name: Npm Install
-        run: npm ci
-
-      - name: Build and Publish
-        env:
-          GA_ID: ${{ secrets.GA_ID }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          DO_KEY_ID: ${{ secrets.DO_KEY_ID }}
-          DO_SECRET_KEY: ${{ secrets.DO_SECRET_KEY }}
-          NODE_ENV: production
-          NODE_OPTIONS: --max_old_space_size=8192
-          CSC_IDENTITY_AUTO_DISCOVERY: false
-        run: npm run publish
+#  build-mac:
+#    needs: create-release
+#    runs-on: macos-latest
+#    steps:
+#      - uses: actions/checkout@v2
+#
+#      - name: Use Node.js
+#        uses: actions/setup-node@v3
+#        with:
+#          node-version: '16.x'
+#
+#      - name: Install Python 2.7
+#        run: |
+#            brew install pyenv
+#            pyenv install 2.7.18
+#
+#      - name: Install Python 3.10
+#        uses: actions/setup-python@v5
+#        with:
+#            python-version: '3.10'
+#
+#      - name: Npm Install
+#        run: npm ci
+#
+#      - name: Build and Publish
+#        env:
+#          GA_ID: ${{ secrets.GA_ID }}
+#          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+#          DO_KEY_ID: ${{ secrets.DO_KEY_ID }}
+#          DO_SECRET_KEY: ${{ secrets.DO_SECRET_KEY }}
+#          NODE_ENV: production
+#          NODE_OPTIONS: --max_old_space_size=8192
+#          CSC_IDENTITY_AUTO_DISCOVERY: false
+#        run: npm run publish
 
   build-linux:
     needs: create-release
