@@ -7,10 +7,6 @@ appId: openblock.cc.robopro-desktop
 productName: "RoboProDesktop"
 publish:
   - provider: github
-  - provider: spaces
-    name: openblock
-    path: desktop
-    region: sgp1
 artifactName: "RoboPro-Desktop_v${version}_${os}_${arch}.${ext}"
 
 fileAssociations:
