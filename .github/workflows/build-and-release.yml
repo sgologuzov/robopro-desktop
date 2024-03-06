@@ -57,7 +57,7 @@ jobs:
 
   build-windows:
     needs: create-release
-    runs-on: windows-2019
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
 
@@ -90,6 +90,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '16.x'
+      - name: Install Python 2.7
+        run: |
+            brew install pyenv
+            pyenv install 2.7.18
 
       - name: Install Python 3.10
         uses: actions/setup-python@v5
