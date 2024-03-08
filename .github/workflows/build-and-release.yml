@@ -29,10 +29,9 @@ jobs:
           tag_name: ${{ steps.tag.outputs.tag }}
           release_name: RoboPro Desktop ${{ steps.tag.outputs.tag }}
           body: |
-            ## Change Log (ru)
+            ## Change Log
 
             - **Новый функционал**
-
                 1.  Добавить датчик температуры A0 #9
 
             - **Исправление ошибок**
