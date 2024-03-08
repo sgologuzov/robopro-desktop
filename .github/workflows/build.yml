@@ -1,13 +1,13 @@
 name: Build Test App
 
-on: workflow_dispatch
-#  push:
-#    branches: [ main ]
-#    paths-ignore:
-#      - 'README.md'
-#      - 'CHANGE.md'
-#      - 'doc/*'
-#      - '.github/*'
+on:
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - 'README.md'
+      - 'CHANGE.md'
+      - 'doc/*'
+      - '.github/*'
 
 jobs:
   build-windows:
