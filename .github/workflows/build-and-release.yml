@@ -47,7 +47,7 @@ jobs:
 
   build-windows:
     needs: create-release
-    runs-on: windows-2019
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
 
