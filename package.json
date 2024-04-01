@@ -3,7 +3,7 @@
   "productName": "RoboProDesktop",
   "description": "RoboPro as a self-contained desktop application",
   "author": "Openblock.cc Team <contact@openblock.cc> (http://www.openblock.cc/)",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "license": "MIT",
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
